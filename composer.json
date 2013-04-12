@@ -6,10 +6,7 @@
     "extra": {
         "heroku": {
             "framework": "silex",
-            "site": "index.php",
-            "engines": {
-                "php": "5.3.23"
-            }
+            "index-document": "index.php"
         }
     }
 }
