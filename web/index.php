@@ -14,4 +14,9 @@ $app->get('/info', function() {
     return ob_get_clean();
 });
 
+# Produce a test error for the log
+$app->get('/error', function() {
+    trigger_error("Test Error!", E_USER_ERROR);
+});
+
 $app->run();
