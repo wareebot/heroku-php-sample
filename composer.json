@@ -8,7 +8,7 @@
             "framework": "silex",
             "index-document": "index.php",
             "php-config": [
-                "short_open_tag": "on"
+                "short_open_tag=on"
             ]
         }
     }
