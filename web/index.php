@@ -3,6 +3,12 @@
 require(__DIR__ . '/../vendor/autoload.php');
 
 $app = new \Silex\Application;
+$app['debug'] = true;
+
+if ($app['debug']) {
+    $app->register(new Whoops\Provider\Silex\WhoopsServiceProvider);
+}
+
 $app->get('/', function() {
     return "<h1>Hello World</h1>";
 });
