@@ -16,7 +16,7 @@
                 "php": "5.5.0"
             },
             "compile": [
-                "echo 'This is a compile command!''"
+                "echo 'This is a compile command!'"
             ]
         }
     }
