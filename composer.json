@@ -9,7 +9,8 @@
             "document-root": "web",
             "index-document": "index.php",
             "php-config": [
-                "short_open_tag=on"
+                "short_open_tag=on",
+                "date.timezone=Europe/Vienna"
             ],
             "engines": {
                 "php": "5.4.16"
