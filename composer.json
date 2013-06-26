@@ -16,8 +16,7 @@
                 "php": "5.5.0"
             },
             "compile": [
-                "pecl install mongo",
-                "pecl install memcached"
+                "echo This is a compile command!"
             ]
         }
     }
