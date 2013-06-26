@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f221e06ab3bcf933d80ab51babf0cc25",
+    "hash": "ab09b3c24f3ffafc23c29f9191a29f5b",
     "packages": [
         {
             "name": "filp/whoops",
@@ -522,7 +522,7 @@
         "silex/silex": 20
     },
     "platform": {
-        "php": ">=5.4.0"
+        "php": ">=5.3.0"
     },
     "platform-dev": [
 
