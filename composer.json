@@ -13,7 +13,7 @@
                 "date.timezone=Europe/Vienna"
             ],
             "engines": {
-                "php": "5.3.26"
+                "php": "5.4.16"
             }
         }
     }
