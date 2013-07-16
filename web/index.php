@@ -20,23 +20,19 @@ $app->get('/', function() use ($app) {
     return "<h1>Hello World</h1>";
 });
 
-$app->get('/apc/{value}', function($value) use ($app) {
+$app->get('/apc/{value}', function ($value) use ($app) {
+    apcu_store('val', $value);
+    return "<p>Value stored</p>";
+});
+
+$app->get('/apc', function () use ($app) {
+    $value = apcu_fetch('val');
     $html = '';
     $html .= '<h1>APC test</h1>';
-
-    if ($value) {
-        apcu_store('val', $value);
-    }
-
-    $value = apcu_fetch('val');
-
     $html .= "<p>Value: <code>$value</code></p>";
+});
 
-    return $html;
-})
-->value('value', '');
-
-$app->get('/info', function() {
+$app->get('/info', function () {
     ob_start();
     phpinfo();
 
