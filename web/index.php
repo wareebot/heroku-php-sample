@@ -16,7 +16,6 @@ $app->register(new CHH\Silex\CacheServiceProvider, [
 ]);
 
 $app->get('/', function() use ($app) {
-
     return "<h1>Hello World</h1>";
 });
 

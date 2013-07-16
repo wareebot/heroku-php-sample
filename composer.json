@@ -15,7 +15,7 @@
                 "extension=apcu.so"
             ],
             "engines": {
-                "php": "5.4.17",
+                "php": "5.5.0",
                 "nginx": "1.5.2"
             }
         }
