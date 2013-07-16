@@ -20,19 +20,21 @@ $app->get('/', function() use ($app) {
     return "<h1>Hello World</h1>";
 });
 
-$app->get('/apc', function() use ($app) {
+$app->get('/apc/{value}', function($value) use ($app) {
     $html = '';
     $html .= '<h1>APC test</h1>';
 
-    if (!$app['cache']->contains('foo')) {
-        $app['cache']->save('foo', 'bar');
-    } else {
-        $html .= "<p>Foo exists: {$app['cache']->fetch('foo')}</p>";
-        $app['cache']->delete('foo');
+    if ($value) {
+        apcu_store('val', $value);
     }
 
+    $value = apcu_fetch('val');
+
+    $html .= "<p>Value: <code>$value</code></p>";
+
     return $html;
-});
+})
+->value('value', '');
 
 $app->get('/info', function() {
     ob_start();
