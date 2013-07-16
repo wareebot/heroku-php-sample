@@ -27,9 +27,12 @@ $app->get('/apc/{value}', function ($value) use ($app) {
 
 $app->get('/apc', function () use ($app) {
     $value = apcu_fetch('val');
+
     $html = '';
     $html .= '<h1>APC test</h1>';
     $html .= "<p>Value: <code>$value</code></p>";
+
+    return $html;
 });
 
 $app->get('/info', function () {
