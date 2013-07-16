@@ -9,8 +9,29 @@ if ($app['debug']) {
     $app->register(new Whoops\Provider\Silex\WhoopsServiceProvider);
 }
 
-$app->get('/', function() {
+$app->register(new CHH\Silex\CacheServiceProvider, [
+    'cache.options' => [
+        'default' => ['driver' => 'apc']
+    ]
+]);
+
+$app->get('/', function() use ($app) {
+
     return "<h1>Hello World</h1>";
+});
+
+$app->get('/apc', function() use ($app) {
+    $html = '';
+    $html .= '<h1>APC test</h1>';
+
+    if (!$app['cache']->contains('foo')) {
+        $app['cache']->save('foo', 'bar');
+    } else {
+        $html .= "<p>Foo exists: {$app['cache']->fetch('foo')}</p>";
+        $app['cache']->delete('foo');
+    }
+
+    return $html;
 });
 
 $app->get('/info', function() {
