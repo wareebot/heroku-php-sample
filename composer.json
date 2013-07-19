@@ -14,7 +14,6 @@
                 "date.timezone=Europe/Vienna"
             ],
             "engines": {
-                "php": "5.5.0",
                 "nginx": "1.5.2"
             }
         }
