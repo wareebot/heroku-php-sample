@@ -3,7 +3,7 @@
 require(__DIR__ . '/../vendor/autoload.php');
 
 $app = new \Silex\Application;
-$app['debug'] = true;
+$app['debug'] = false;
 
 if ($app['debug']) {
     $app->register(new Whoops\Provider\Silex\WhoopsServiceProvider);
