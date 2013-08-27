@@ -12,10 +12,7 @@
             "php-config": [
                 "short_open_tag=on",
                 "date.timezone=Europe/Vienna"
-            ],
-            "engines": {
-                "nginx": "1.5.2"
-            }
+            ]
         }
     }
 }
