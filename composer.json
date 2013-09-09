@@ -12,6 +12,9 @@
             "php-config": [
                 "short_open_tag=on",
                 "date.timezone=Europe/Vienna"
+            ],
+            "compile": [
+                "echo 'foo'"
             ]
         }
     }
