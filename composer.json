@@ -14,6 +14,9 @@
                 "date.timezone=Europe/Vienna",
                 "extension=redis.so"
             ],
+            "engines": {
+                "php": "5.5.0"
+            },
             "compile": [
                 "echo foo"
             ]
