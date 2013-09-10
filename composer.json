@@ -14,7 +14,7 @@
                 "date.timezone=Europe/Vienna"
             ],
             "compile": [
-                "echo 'foo'"
+                "echo foo"
             ]
         }
     }
