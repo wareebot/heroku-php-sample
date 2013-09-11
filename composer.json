@@ -16,8 +16,8 @@
                 "extension=mongo.so"
             ],
             "engines": {
-                "php": "5.4.15",
-                "nginx": "1.2.9"
+                "php": "5.5.*",
+                "nginx": "1.4.*"
             },
             "compile": [
                 "echo foo"
