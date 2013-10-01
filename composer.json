@@ -19,7 +19,8 @@
             },
             "compile": [
                 "echo foo"
-            ]
+            ],
+            "newrelic": "e9f12830c624c0c4bb100bb6b5f9468db7b0a25e"
         }
     }
 }
