@@ -21,7 +21,7 @@
             "compile": [
                 "php --version"
             ],
-            "newrelic": true
+            "newrelic": false
         }
     }
 }
