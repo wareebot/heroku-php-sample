@@ -3,7 +3,8 @@
         "php": ">=5.3.0",
         "silex/silex": "~1.0@dev",
         "filp/whoops": "~1.0",
-        "chh/cache-service-provider": "~1.0"
+        "chh/cache-service-provider": "~1.0",
+        "ext-igbinary": "*"
     },
     "extra": {
         "heroku": {
