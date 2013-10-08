@@ -20,7 +20,7 @@
                 "nginx": "1.4.*"
             },
             "compile": [
-                "php --version"
+                "php -i"
             ],
             "newrelic": true
         }
