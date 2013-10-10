@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f41846922d205cac2fd6ca9a403b204e",
+    "hash": "1d826f84111de41a55daaea9541b2feb",
     "packages": [
         {
             "name": "chh/cache-service-provider",
@@ -267,12 +267,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Silex.git",
-                "reference": "86fb50c1aa313cbbe6ef58d13cedced1c2be3255"
+                "reference": "ab1d253df3f0db4ceab802103ab84b2d2833a781"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Silex/zipball/86fb50c1aa313cbbe6ef58d13cedced1c2be3255",
-                "reference": "86fb50c1aa313cbbe6ef58d13cedced1c2be3255",
+                "url": "https://api.github.com/repos/fabpot/Silex/zipball/ab1d253df3f0db4ceab802103ab84b2d2833a781",
+                "reference": "ab1d253df3f0db4ceab802103ab84b2d2833a781",
                 "shasum": ""
             },
             "require": {
@@ -343,7 +343,7 @@
             "keywords": [
                 "microframework"
             ],
-            "time": "2013-10-01 17:07:38"
+            "time": "2013-10-09 09:12:34"
         },
         {
             "name": "symfony/debug",
@@ -646,8 +646,7 @@
         "silex/silex": 20
     },
     "platform": {
-        "php": ">=5.3.0",
-        "ext-igbinary": "*"
+        "php": ">=5.3.0"
     },
     "platform-dev": [
 
