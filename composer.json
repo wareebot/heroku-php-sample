@@ -20,6 +20,7 @@
                 "nginx": "1.4.*"
             },
             "compile": [
+                "pecl install igbinary"
             ],
             "newrelic": true
         }
