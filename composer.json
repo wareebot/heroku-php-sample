@@ -21,6 +21,7 @@
                 "nginx": "1.4.*"
             },
             "compile": [
+                "echo $FOO"
             ],
             "newrelic": true
         }
